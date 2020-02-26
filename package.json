@@ -1,0 +1,29 @@
+{
+  "name": "w7-mariam-salah",
+  "version": "1.0.0",
+  "description": "postgress week",
+  "main": "index.js",
+  "directories": {
+    "dev": "nodemon index.js",
+    "test": "test jest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G8/w7-mariam-salah.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G8/w7-mariam-salah/issues"
+  },
+  "homepage": "https://github.com/GSG-G8/w7-mariam-salah#readme",
+  "dependencies": {
+    "env2": "^2.2.2",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1"
+  }
+}
