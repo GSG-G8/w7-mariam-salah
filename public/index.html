@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogger</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav">
+      <a href="#" class="logo">Blogger | Be Awesome </a>
+    </div>
+  </nav>
+  <main>
+    <form class="form" action="/create-post" method="post">
+      <input type="text" name="title" value="" placeholder="What is in your mind">
+      <input type="text" name="detail" value="" placeholder="Details .. ">
+      <input type="text" name="img" value="" placeholder="Image source">
+      <button type="submit" name="button">+ Add Post</button>
+    </form>
+    <div class="table-container">
+      <div class="posts-div" id="posts-div">
+        <h2 class="posts-title"> Title </h2>
+        <img class="posts-img"
+          src="https://images.unsplash.com/photo-1572621403925-33e05716ad8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        <p class="posts-detail"> detail </p>
+        <p class="posts-date"> date </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="footer"> &copy; All rights reserved
+    </p>
+  </footer>
+  <script type="text/javascript" src="js/logic.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/dom.js"></script>
+</body>
+
+</html>
