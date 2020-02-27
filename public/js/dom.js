@@ -1,8 +1,9 @@
+const e = require("express");
 
 const mainDiv = document.getElementById('table-container');
 
-//fetching();
-const displayplogs = (data) => {
+// fetching();
+const displayposts = (data) => {
   data.forEach((element) => {
     const title = document.createElement('h2');
     const postImg = document.createElement('img');
@@ -24,3 +25,4 @@ const displayplogs = (data) => {
     mainDiv.appendChild(date);
   });
 };
+// e.prevent defult
