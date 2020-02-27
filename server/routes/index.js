@@ -9,7 +9,8 @@ router.get('/posts', (req, res) => {
 
 router.post('/create-post', (req, res) => {
   const data = req.body;
-  func.createpost(data).then(() => res.redirect('/')).catch(res.json({ error: 'error on insert data' }));
+  func.createpost(data)
+    .then(res.redirect('/'))
+    .catch(console.error);
 });
-
 module.exports = router;
