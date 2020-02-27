@@ -4,13 +4,12 @@ const func = require('../database/queries');
 router.get('/posts', (req, res) => {
   func.getpost(req.body)
     .then((result) => res.json(result.rows))
-    .catch(() => console.error('error :', error));
+    .catch(console.error);
 });
 
 router.post('/create-post', (req, res) => {
-  func.createpost(req.body)
-    .then(() => res.redirect('/'))
-    .catch(() => console.error('error :', error));
+  const data = req.body;
+  func.createpost(data).then(() => res.redirect('/')).catch(res.json({ error: 'error on insert data' }));
 });
 
 module.exports = router;
