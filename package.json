@@ -8,11 +8,10 @@
     "test": "test jest"
   },
   "scripts": {
-    "test": "jest ",
-    "dev1": "NODE_ENV=development node server/index.js",
-    "dev2": "NODE_ENV=test jest",
-    "start": "NODE_ENV=production node server/index.js",
-    "runn": "node index.js"
+    "test": "jest",
+    "dev1": "NODE_ENV=development nodemon server/index.js",
+    "dev2": "NODE_ENV=test server/index.js",
+    "start": "NODE_ENV=production node server/index.js"
   },
   "repository": {
     "type": "git",

@@ -10,7 +10,4 @@ const createpost = (data) => {
   connection.query('INSERT INTO posts(title,detail,img) VALUES ($1,$2,$3)', [title, detail, img]);
 };
 
-module.exports = {
-  getpost,
-  createpost,
-};
+module.exports = { getpost, createpost };
