@@ -1,9 +1,8 @@
-const fetching = require('./logic');
 
 const mainDiv = document.getElementById('table-container');
 
-fetching();
-const creatBlog = (data) => {
+//fetching();
+const displayplogs = (data) => {
   data.forEach((element) => {
     const title = document.createElement('h2');
     const postImg = document.createElement('img');

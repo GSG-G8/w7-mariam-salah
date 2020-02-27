@@ -1,9 +1,5 @@
-const creatBlog = require('./dom');
-
 const fetching = () => {
-  return fetch('/posts')
-    .then((result) => creatBlog(result))
+  return fetch('/blogger')
+    .then((result) => displayPlogs(result))
     .catch((error) => document.write('eror database', error));
 };
-
-module.exports = fetching;

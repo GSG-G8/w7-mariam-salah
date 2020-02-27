@@ -1,19 +1,21 @@
 const { Pool } = require('pg');
-require('dotenv')('config.env');
+require('dotenv').config();
 
 let dbUrl = '';
+
 if (process.env.NODE_ENV === 'development') {
-  dbUrl = 'plog_developer';
+  dbUrl = process.env.plog_developer;
 } else if (process.env.NODE_ENV === 'test') {
-  dbUrl = 'plog_test';
+  dbUrl = process.env.plog_test;
 } else if (process.env.NODE_ENV === 'production') {
-  dbUrl = 'plog_db';
+  dbUrl = process.env.plog_db;
 } else {
   // eslint-disable-next-line no-undef
   throw error('There is no database');
 }
 const options = {
   connectionString: dbUrl,
+  rejectUnauthorized: true,
   ssl: true,
 };
 module.exports = new Pool(options);
