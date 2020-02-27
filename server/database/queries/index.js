@@ -5,10 +5,8 @@ const getpost = () => {
   return sql;
 };
 const createpost = (data) => {
-  const { title } = data;
-  const { detail } = data;
-  const { img } = data;
-  connection.query('INSERT INTO posts(title,detail,img) VALUES ($1,$2,$3)', [title, detail, img]);
+  return connection.query('INSERT INTO posts(title,detail,img) VALUES ($1,$2,$3)',
+    [data.title, data.detail, data.img]);
 };
 
 module.exports = {
