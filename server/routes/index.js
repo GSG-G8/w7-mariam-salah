@@ -1,6 +1,12 @@
 const router = require('express').Router();
-const { getallpost, createnewpost } = require('../controller');
+const func = require('../database/queries');
 
-router.get('/posts', getallpost);
-router.get('/cratepost', createnewpost);
+router.get('/posts', (req, res) => {
+  func.getpost()
+    .then((result) => res.json(result.rows))
+    .catch(() => console.error('error :', error));
+});
+
+// router.get('/cratepost', createnewpost);
+
 module.exports = router;

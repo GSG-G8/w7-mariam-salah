@@ -1,7 +1,8 @@
 const connection = require('../config/connection');
 
 const getpost = () => {
-  connection.query('select * from posts');
+  const sql = connection.query('select * from posts');
+  return sql;
 };
 const createpost = (data) => {
   const { title } = data;
