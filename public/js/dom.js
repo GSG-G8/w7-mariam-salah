@@ -1,8 +1,6 @@
-const e = require("express");
 
 const mainDiv = document.getElementById('table-container');
 
-// fetching();
 const displayposts = (data) => {
   data.forEach((element) => {
     const title = document.createElement('h2');
@@ -25,4 +23,10 @@ const displayposts = (data) => {
     mainDiv.appendChild(date);
   });
 };
+
+fetch('/posts')
+  .then((res) => res.json())
+  .then((result) => displayposts(result))
+  .catch((error) => document.write('eror database', error));
+
 // e.prevent defult
