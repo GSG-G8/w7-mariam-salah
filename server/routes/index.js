@@ -13,5 +13,4 @@ router.post('/create-post', (req, res) => {
     .then(res.redirect('/'))
     .catch(console.error);
 });
-
 module.exports = router;
