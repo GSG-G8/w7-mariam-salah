@@ -12,9 +12,17 @@ single page that enables users to sharing posts
  
 
 ## How
+* sketch layout 
+* make server by using express js 
+* bulid database using postgress
 
-make server by using express js 
-bulid database using postgress 
+## technologies we use
+* HTML5
+* CSS3
+* JS
+* NODE JS
+* EXPRESS JS
+* JEST FOR TESTING
 
 
 
