@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'development') {
 } else if (process.env.NODE_ENV === 'test') {
   dbUrl = process.env.plog_test;
 } else if (process.env.NODE_ENV === 'production') {
-  dbUrl = process.env.plog_db;
+  dbUrl = process.env.DATABASE_URL;
 } else {
   // eslint-disable-next-line no-undef
   throw error('There is no database');
