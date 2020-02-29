@@ -1,26 +1,35 @@
 *{
   margin: 0;
+}
+main{
   background-color: #FAFAFA;
+}
+.main {
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 .eror500{
   width:100%;
   height: 100vh;
   background-image: url(../img/error500.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 120% 100vh;
 }
 .eror404{
   width:100%;
   height: 100vh;
   background-image: url(../img/400-Bad-Request-t.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 120% 100vh;
 }
 .nav{
   font-size: 20px;
   text-align: center;
   padding: 10px;
   background-color:white;
+  border-bottom: 1px solid rgb(216, 211, 211);
   box-shadow: 0 2 px 2px -2px gray;
 }
 .logo{
@@ -29,9 +38,13 @@
   font-weight: bold;
 }
 .form{
-  width: 90%;
-  margin: 0;
-  margin:0 auto;
+  margin: 0 auto;
+  border:.5px solid rgb(216, 212, 212);
+  box-shadow: 2px 2px 4px 0px rgb(184, 180, 180);
+  background-color: white;
+  width:85%;
+  margin-top: 10px;
+  padding: 5px 0 20px 20px;
 }
 .form input{
   margin-top: 17px;
@@ -41,70 +54,92 @@
   height: 50px;
   outline: none;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(206, 203, 203);
 }
 .form button{
-  color:white;
+  color:black;
   margin-top: 17px;
-  background-color:blue;
+  background-color:white;
   height: 35px;
   font-size: 15px;
   border: none;
   cursor: pointer;
+  box-shadow: 2px 2px 10px 0px gray;
+
 }
 .container{
-  width: 95%;
   margin: 0 auto;
+  width: 95%;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
 .posts-div{
   background-color: white;
-  border:.5px solid gray;
-  box-shadow: 1px 2px 2px -2px blue;
-  padding: 10px;
-  margin: 3px;
+  border:.5px solid rgb(216, 212, 212);
+  box-shadow: 2px 2px 4px 0px rgb(184, 180, 180);
+  margin: 15px;
 }
 .posts-title{
-  background-color: white;
-  text-align: center;
-  font-size: 16px;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
   }
-  .posts-img{
+.posts-img{
     width: 100%;
-    height: 500px;
+    height: 250px;
     opacity: 1;
     margin: 5px 0 5px;
  }
  .posts-img:hover{
-   opacity: .9;
+  opacity: .9;
 }
 .posts-detail{
  background-color: white;
  font-size: 14px;
+ padding: 10px;
+
 }
 .posts-date{
-  border-top: .5px solid gray;
+  border-top: .5px solid rgb(211, 207, 207);
   background-color: white;
-  margin-top: 12px;
+  margin-top: 20px;
   text-align: right;
+  font-size: 12px;
+  padding: 10px;
 }
 .footer{
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   padding: 10px;
   background-color:white;
   box-shadow: 0 2 px 2px -2px gray;
   color: black;
 }
+.fa-heart{
+  font-size: 20px;
+  line-height: 20px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
 @media screen and (min-width: 800px) {
+  .main{
+  max-width: 80%;
+  }
   .form{
-    width: 50%;
-    margin:0 auto;
+    position: fixed;
+    width: 25%;
+    margin-top: 15px;
   }
   .container{
     width: 50%;
+    margin: 0%;
+    margin-left: 40%;
+  }
+  .posts-img{
+    height: 350px;
   }
 }
