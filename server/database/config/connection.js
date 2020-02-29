@@ -2,17 +2,14 @@ const { Pool } = require('pg');
 require('dotenv').config();
 
 let dbUrl = '';
-
-if (process.env.NODE_ENV === 'development') {
-  dbUrl = process.env.plog_developer;
-} else if (process.env.NODE_ENV === 'test') {
+if (process.env.NODE_ENV === 'test') {
   dbUrl = process.env.plog_test;
 } else if (process.env.NODE_ENV === 'production') {
   dbUrl = process.env.DATABASE_URL;
 } else {
-  // eslint-disable-next-line no-undef
-  throw error('There is no database');
+  dbUrl = process.env.plog_developer;
 }
+
 const options = {
   connectionString: dbUrl,
   rejectUnauthorized: true,
