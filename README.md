@@ -26,5 +26,11 @@ single page that enables users to sharing posts
 * EXPRESS JS
 * JEST FOR TESTING
 
+## Stretch gools
+* make users authentication
+* make commints on posts
+* make the heart working for posts
+ 
+
 
 
