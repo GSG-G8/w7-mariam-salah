@@ -8,9 +8,8 @@
     "test": "test jest"
   },
   "scripts": {
-    "test": "jest",
-    "dev1": "NODE_ENV=development nodemon server/index.js",
-    "dev2": "NODE_ENV=test server/index.js",
+    "dev": "NODE_ENV=development nodemon server/index.js",
+    "test": "NODE_ENV=test jest",
     "start": "NODE_ENV=production node server/index.js"
   },
   "repository": {
