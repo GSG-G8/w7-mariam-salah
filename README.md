@@ -1,4 +1,6 @@
 # w7-mariam-salah
+
+![](https://i.imgur.com/LCfCA1w.png)
 # OUR TEAM
     • Mariam Isa
     • Ahmed salah
